@@ -1,4 +1,4 @@
-/* Проект «Секреты Тёмнолесья»
+/* Анализ онлайн-игры
  * Цель проекта: изучить влияние характеристик игроков и их игровых персонажей 
  * на покупку внутриигровой валюты «райские лепестки», а также оценить 
  * активность игроков при совершении внутриигровых покупок
@@ -253,4 +253,5 @@ SELECT
 	ROUND(AVG(avg_time_between_transactions)) AS avg_time_between_transactions
 FROM buy_frequency
 GROUP BY buy_frequency_category
+
 ORDER BY avg_time_between_transactions;
